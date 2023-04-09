@@ -1,0 +1,140 @@
+/*Top Column of Page*/
+.top{
+    background-color: #5c260c;
+    height: 15%;
+    flex:1;
+    
+}
+
+/*Container for all components of the page*/
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+
+}
+
+/*Left Column of Page*/
+.left{
+    display:flex;
+    background-color: black;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Flexbox*/
+.main{
+    flex: 1;
+
+}
+
+/*Right Column of Page*/
+.right{
+    display:flex;
+    background-color: black;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*Taskbar Styling*/
+.taskbar {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Header Styling*/
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+/*Button Styling*/
+.button {
+    padding: 5px;
+    margin-left: 75px;
+    margin-right: 75px;
+    width: 100px;
+    height: 30px;
+    background-color: #702703;
+    font-weight: bold;
+
+}
+
+/*Link Color before its pressed*/
+a:link {
+    color: black;
+}
+
+/*Link Color after its pressed*/
+a:visited {
+    color: black;
+}
+
+/*Styling for contents of Columns*/
+.column-font {
+    color: white;
+    font-size: 16;
+    padding: 5px;
+    justify-content: center;
+}
+
+/*Styling for contents of Columns*/
+.column-contents {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+}
+
+/*Styling for contents of Columns*/
+.column-header-style {
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+/*Styling for pictures in columns*/
+.location-pics {
+    width: 75%;
+    height: 75%;
+    border-radius: 15px;
+}
+
+/*Styling for contents of the main page (that we change)*/
+.page-contents {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background-color: #b54e1b;
+    height: 85%;
+    font-size: 25px;
+
+}
+
+/*Styling/Formatting for questions portion of menu page*/
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Styling/Formatting for images in the question portion of menu page*/
+.form-img {
+    width: 150px;
+    height: 150px;
+}
+
+/*Styling for questions*/
+.question {
+    font-size: 35px;
+    text-decoration: underline;
+}
