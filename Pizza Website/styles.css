@@ -112,7 +112,9 @@ a:visited {
 .page-contents {
     display: flex;
     flex: 1;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #b54e1b;
     height: 85%;
     font-size: 25px;
@@ -137,4 +139,25 @@ a:visited {
 .question {
     font-size: 35px;
     text-decoration: underline;
+}
+
+/*Image formating for Logo*/
+.logo {
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+/*Buttons for Main Page*/
+.main_buton {
+    padding: 5px;
+    margin-top: 75px;
+    margin-left: 75px;
+    margin-right: 75px;
+    width: 25%;
+    height: 15%;
+    background-color: #702703;
+    font-weight: bold;
 }
