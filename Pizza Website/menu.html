@@ -48,24 +48,39 @@
                             <p class="question">
                                 Select a menu item!
                             </p>
-                            
-                            <label>
-                                Cheese
-                                <input type="radio" name="question2" value="Cheese" style="margin-bottom: 15px;">
-                                <img class="form-img" src="./assets/cheese.jpg">
-                            </label>
-                            <label>
-                                Pepperoni
-                                <input type="radio" name="question2" value="Pepperoni" style="margin-bottom: 15px;">
-                                <img class="form-img" src="./assets/pepperoni.jpg">
-                            </label>
-                            <label>
-                                Sausage
-                                <input type="radio" name="question2" value="Sausage" style="margin-bottom: 15px;">
-                                <img class="form-img" src="./assets/sausage.jpg">
-                            </label>
-                            
+                            <div style="margin-bottom: 100px;">
+                                <label>
+                                    Cheese
+                                    <input type="radio" name="question2" value="Cheese" style="margin-bottom: 15px;">
+                                    <img class="form-img" src="./assets/cheese.jpg">
+                                </label>
+                                <label>
+                                    Pepperoni
+                                    <input type="radio" name="question2" value="Pepperoni" style="margin-bottom: 15px;">
+                                    <img class="form-img" src="./assets/pepperoni.jpg">
+                                </label>
+                                <label>
+                                    Sausage
+                                    <input type="radio" name="question2" value="Sausage" style="margin-bottom: 15px;">
+                                    <img class="form-img" src="./assets/sausage.jpg">
+                                </label>
+                            </div>
+                            <div>
+                                <p class="question">Choose your size!</p>
+                                <label style="flex-direction: column;">
+                                    Size:
+                                    <select id="size" name="size" style="margin-bottom: 40px;">
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                        <option value="extra-large">Extra-Large</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <button type="submit" class="submit-button">Add to cart</button>
+                            <button class="submit-button place-order"><a>Continue to place order</a></button>
                         </form>
+            
                     </div>
                 </div>
             <div class="right">

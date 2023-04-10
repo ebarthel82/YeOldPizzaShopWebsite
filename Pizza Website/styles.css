@@ -129,12 +129,29 @@ a:visited {
 
 /*Styling/Formatting for images in the question portion of menu page*/
 .form-img {
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
 }
 
 /*Styling for questions*/
 .question {
     font-size: 35px;
     text-decoration: underline;
+    
+}
+
+.submit-button {
+    height: 40px;
+    width: 250px;
+    background-color: brown;
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight: bold; 
+}
+
+.place-order {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
 }
