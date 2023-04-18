@@ -78,6 +78,24 @@
 
 }
 
+.place-order {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #9e0e0e;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+
+}
+
+.place-order:hover {
+    background-color: #383434;
+    color: white;
+}
+
 .button:hover {
     background-color: #383434;
     color: white;
@@ -86,7 +104,6 @@
 
 /*Link Color before its pressed*/
 a:link {
-    color: black;
     text-decoration: none;
 }
 
@@ -95,6 +112,8 @@ a:visited {
     color: black;
     text-decoration: none;
 }
+
+
 
 /*Styling for contents of Columns*/
 .column-font {
