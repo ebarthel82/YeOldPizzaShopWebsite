@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pizza Website Ordering Page</title>
+        <link rel="stylesheet" type ="text/css" href="styles.css">
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                font-family: myFont;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <div class="column-font">
+                    <div class="column-contents">
+                        <button class="button" onclick="location.href='index.html'"><a style="font-family: myFont">Home</a></button>
+                        <button class="button" onclick="location.href='menu.html'"><a style="font-family: myFont">Order</a></button>
+                        <button class="button" onclick="location.href='rate.html'"><a style="font-family: myFont">Rate Us</a></button>
+                    </div>
+                </div>
+            </div>
+                <div class="main">
+                    <div class="top">
+                        <img class="logo" alt="Ye Old Pizza Shop" src="./assets/wooden-sign-with-shaped-shield.jpg.png" >
+                        <h1 class="header">Place your order</h1>
+                    </div>
+                    <div class="page-contents">
+                        
+                        <form class="form-layout">
+                            <p class="question">Delivery or Pickup?</p>
+                            <label>
+                                Delivery
+                                <input type="radio" name="question1" value="Delivery" style="margin-bottom: 15px;">
+                            </label>
+                            <label>
+                                Pickup
+                                <input type="radio" name="question1" value="Pickup" style="margin-bottom: 100px;">
+                            </label>
+                            <p class="question">
+                                Select a menu item!
+                            </p>
+                            
+                            <label>
+                                Cheese
+                                <input type="radio" name="question2" value="Cheese" style="margin-bottom: 15px;">
+                                <img class="form-img" src="./assets/cheese.jpg">
+                            </label>
+                            <label>
+                                Pepperoni
+                                <input type="radio" name="question2" value="Pepperoni" style="margin-bottom: 15px;">
+                                <img class="form-img" src="./assets/pepperoni.jpg">
+                            </label>
+                            <label>
+                                Sausage
+                                <input type="radio" name="question2" value="Sausage" style="margin-bottom: 15px;">
+                                <img class="form-img" src="./assets/sausage.jpg">
+                            </label>
+                            
+                        </form>
+                        <button class="place-order"><a style="font-family: myFont">Place order</a></button>
+                    </div>
+                </div>
+            <div class="right">
+                <div class="column-font">
+                    <div class="column-contents">
+                        <img class ="location-pics" src="./assets/pizza1.jpg">
+                        <img class ="location-pics" src="./assets/pizza2.jpg">
+                        <img class ="location-pics" src="./assets/pizza3.jpg">               
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
