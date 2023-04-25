@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!--Title of webpage-->
+        <title>Pizza Website Ordering Page</title>
+
+        <!-- Importing Stylesheet-->
+        <link rel="stylesheet" type ="text/css" href="styles.css">
+
+        <!-- Setting style so application always takes up whole viewport-->
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                font-family: myFont;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Main Div for entire Application-->
+        <div class="container">
+
+            <!--Div for Left Column-->
+            <div class="left">
+
+                <!--Div for column contents -->
+                <div class="column-font">
+
+                    
+                    <div class="column-contents">
+                        <button class="button" onclick="location.href='index.html'"><a style="font-family: myFont">Home</a></button>
+                        <button class="button" onclick="location.href='menu.html'"><a style="font-family: myFont">Order</a></button>
+                        <button class="button" onclick="location.href='rate.html'"><a style="font-family: myFont">Rate Us</a></button>
+                    </div>
+                </div>
+            </div>
+
+                <!--Div for taskbar and top of page -->
+                <div class="main">
+
+                    <div class="top">
+                        <img class="logo" alt="Ye Old Pizza Shop" src="./assets/wooden-sign-with-shaped-shield.jpg.png" >
+                        <h1 class="header">Rate Us</h1>
+                    </div>
+                    <div class="page-contents">
+                        <h1 class="column-header-style">Fill out the survey!</h1>
+                        <form method="POST" action="submit-survey.php">
+                            <div class="form-contorl">
+                                <label for="name">
+                                    Name
+                                </label><br>
+                                <input type="text" placeholder="Enter your name" name="name">
+                            </div><br>
+                            <div class="form-contorl">
+                                <label for="email">
+                                    Email
+                                </label><br>
+                                <input type="text" placeholder="Enter your email" name="email">
+                            </div><br>
+                            <div class="form-contorl">
+                                <label>
+                                    How would you rate your experience at Ye Old Pizza Shop?
+                                </label><br>
+                                <!--Input Type Radio Button-->
+                                <label for="1-star">
+                                    <input type="radio"
+                                    name="recommend"
+                                    value="1 star">1 Star
+                                    </input>
+                                </label><br>
+                                <label for="2-star">
+                                    <input type="radio"
+                                    name="recommend"
+                                    value="2 star">2 Stars
+                                    </input>
+                                </label><br>
+                                <label for="3-star">
+                                    <input type="radio"
+                                    name="recommend"
+                                    value="3 star">3 Stars
+                                    </input>
+                                </label><br>
+                                <label for="4-star">
+                                    <input type="radio"
+                                    name="recommend"
+                                    value="4 star">
+                                    4 Stars
+                                    </input>
+                                </label><br>
+                                <label for="5-star">
+                                    <input type="radio"
+                                    name="recommend"
+                                    value="5 star">5 Stars
+                                    </input>
+                                </label><br><br>
+                            </div>
+                            <div class="form-contorl">
+                                <label for="comment">
+                                    Any comments or suggestions?
+                                </label><br>
+                                <!-- multi-line text input control-->
+                            <input type="text" name="comment" placeholder="Enter your comment here"></input>
+                            </div>
+                            <button class="place-order" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+            <!--Div for Right Column -->
+            <div class="right">
+                <div class="column-font">
+                    <div class="column-contents">
+                        <img class ="location-pics" src="./assets/pizza1.jpg">
+                        <img class ="location-pics" src="./assets/pizza2.jpg">
+                        <img class ="location-pics" src="./assets/pizza3.jpg">               
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

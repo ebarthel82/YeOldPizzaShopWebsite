@@ -1,0 +1,192 @@
+@font-face{
+    font-family: myFont;
+    src:url(AlmendraSC.ttf);
+}
+
+/*Top Column of Page*/
+.top{
+    background-color: #383434;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*Container for all components of the page*/
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+
+}
+
+/*Left Column of Page*/
+.left{
+    display:flex;
+    background-color: black;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/*Flexbox*/
+.main{
+    flex: 1;
+
+}
+
+/*Right Column of Page*/
+.right{
+    display:flex;
+    background-color: black;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+
+/*Header Styling*/
+.header {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    flex: 1;
+    margin-right: 15%;
+    
+}
+
+/*Button Styling*/
+.button {
+    padding: 20%;
+    width: 200px;
+    height: 100%;
+    background-color: #9e0e0e;
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    border-radius: 3px;
+
+}
+
+.place-order {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #9e0e0e;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+
+}
+
+.place-order:hover {
+    background-color: #383434;
+    color: white;
+}
+
+.button:hover {
+    background-color: #383434;
+    color: white;
+    
+}
+
+/*Link Color before its pressed*/
+a:link {
+    text-decoration: none;
+}
+
+/*Link Color after its pressed*/
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+/*Styling for contents of Columns*/
+.column-font {
+    color: white;
+    font-size: 16;
+    padding: 5px;
+    justify-content: center;
+}
+
+/*Styling for contents of Columns*/
+.column-contents {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.location-container {
+    display: inline-block;
+}
+/*Styling for contents of Columns*/
+.column-header-style {
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+/*Styling for pictures in columns*/
+.location-pics {
+    width: 47%;
+    height: 47%;
+    border-radius: 15px;
+}
+
+/*Styling for contents of the main page (that we change)*/
+.page-contents {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #757171;
+    height: 82%;
+    font-size: 25px;
+
+}
+
+/*Styling/Formatting for questions portion of menu page*/
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Styling/Formatting for images in the question portion of menu page*/
+.form-img {
+    width: 150px;
+    height: 150px;
+}
+
+/*Styling for questions*/
+.question {
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+/*Image formating for Logo*/
+.logo {
+    height: auto;
+    display: flex;
+    margin-right: auto;
+    width: 15%;
+}
+
