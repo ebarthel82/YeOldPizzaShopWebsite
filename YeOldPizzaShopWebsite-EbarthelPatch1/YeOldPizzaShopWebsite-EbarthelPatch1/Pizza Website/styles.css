@@ -207,3 +207,6 @@ a:visited {
     max-height: 100%;
 }
 
+.input-box {
+    width: 70%;
+}
