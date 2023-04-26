@@ -15,11 +15,41 @@
                 margin: 0;
                 font-family: myFont;
             }
+             @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .mainbody{
+            flex-direction: column;
+        }
+        .left, .main, .right {
+        width: 100%;
+         }
+
+         .button{
+            width: auto;
+            height: auto;
+            padding: 0%;
+            margin: 5%;
+         }
+
+         .pizza-pics{
+            width: auto;
+            padding-top: 20px;
+         }
+
+
+
+        }
         </style>
     </head>
     <body>
+        
+        <div class="top">
+                        <img class="logo" alt="Ye Old Pizza Shop" src="./assets/wooden-sign-with-shaped-shield.jpg.png" >
+                        <h1 class="header">Rate Us</h1>
+                    </div>
+
         <!--Main Div for entire Application-->
-        <div class="container">
+        <div class="mainbody">
 
             <!--Div for Left Column-->
             <div class="left">
@@ -39,10 +69,7 @@
                 <!--Div for taskbar and top of page -->
                 <div class="main">
 
-                    <div class="top">
-                        <img class="logo" alt="Ye Old Pizza Shop" src="./assets/wooden-sign-with-shaped-shield.jpg.png" >
-                        <h1 class="header">Rate Us</h1>
-                    </div>
+                    
                     <div class="page-contents">
                         <h1 class="column-header-style">Fill out the survey!</h1>
                         <form method="POST" action="submit-survey.php">
@@ -102,7 +129,7 @@
                                 <!-- multi-line text input control-->
                             <input type="text" name="comment" placeholder="Enter your comment here"></input>
                             </div>
-                            <button class="place-order" type="submit">Submit</button>
+                            <button class="place-order" type="submit" style="margin-bottom: 20px;">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -111,12 +138,13 @@
             <div class="right">
                 <div class="column-font">
                     <div class="column-contents">
-                        <img class ="location-pics" src="./assets/pizza1.jpg">
-                        <img class ="location-pics" src="./assets/pizza2.jpg">
-                        <img class ="location-pics" src="./assets/pizza3.jpg">               
+                        <img class ="pizza-pics" src="./assets/pizza1.jpg">
+                        <img class ="pizza-pics" src="./assets/pizza2.jpg">
+                        <img class ="pizza-pics" src="./assets/pizza3.jpg">               
                     </div>
                 </div>
             </div>
         </div>
+        <div style="display:block; background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright © copyright Eric Barthel, Blake Norman &  Rylan Loukusa</div>
     </body>
 </html>

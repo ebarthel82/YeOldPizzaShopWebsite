@@ -1,57 +1,90 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pizza Website Ordering Page</title>
-        <link rel="stylesheet" type ="text/css" href="styles.css">
-        <style>
-            html, body {
+<head>
+    <title>Pizza Website Ordering Page</title>
+    <link rel="stylesheet" type ="text/css" href="styles.css">
+    <style>
+        html, body {
                 height: 100%;
                 margin: 0;
                 font-family: myFont;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="left">
-                <div class="column-font">
-                    <div class="column-contents">
-                        <button class="button" onclick="location.href='index.html'"><a style="font-family: myFont">Home</a></button>
-                        <button class="button" onclick="location.href='menu.html'"><a style="font-family: myFont">Order</a></button>
-                        <button class="button" onclick="location.href='rate.html'"><a style="font-family: myFont">Rate Us</a></button>
-                    </div>
-                </div>
-            </div>
-                <div class="main">
-                    <div class="top">                     
-                         <img class="logo" alt="Ye Old Pizza Shop" src="./assets/wooden-sign-with-shaped-shield.jpg.png" >
-                         <h1 class="header">Home</h1>
-                    </div>
-                    <div class="page-contents">
-                        <h1 class="column-header-style">Our Specials</h1>
-                        <div>
-                            <p>Monday - Buy one get one large pizza</p>
-                            <p>Tuesday - $2 off order</p>
-                            <p>Wednesday - 50% off delivery fee</p>
-                            <p>Thursday - Free breadsticks with order</p>
-                            <p>Friday - Two free beverages per pizza</p>
-                        </div>         
-                        <h1 class="column-header-style">Our Locations</h1>         
-                        <div class="location-container">
-                            <img class ="location-pics" src="./assets/scsu.png">
-                            <img class ="location-pics" src="./assets/scsup.png">
-                        </div>
-                    </div>
-                </div>
-            <div class="right">
-                <div class="column-font">
-                    <div class="column-contents">
-                        <img class ="location-pics" src="./assets/pizza1.jpg">
-                        <img class ="location-pics" src="./assets/pizza2.jpg">
-                        <img class ="location-pics" src="./assets/pizza3.jpg">               
-                    </div>
-                </div>
+        }   
+
+        @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .mainbody{
+            flex-direction: column;
+        }
+        .left, .main, .right {
+        width: 100%;
+         }
+
+         .button{
+            width: auto;
+            height: auto;
+            padding: 0%;
+            margin: 5%;
+         }
+
+         .pizza-pics{
+            width: auto;
+            padding-top: 20px;
+         }
+
+
+
+        }
+</style>
+</head>
+<body>
+
+<div class="top">
+    <img class="logo" alt="Ye Old Pizza Shop" src="./assets/wooden-sign-with-shaped-shield.jpg.png" >
+    <h1 class="header">Home</h1>
+</div>
+<div class="mainbody">
+    <div class="left">
+        <div class="column-font">
+            <div class="column-contents">
+                <button class="button" onclick="location.href='index.html'"><a style="font-family: myFont">Home</a></button>
+                <button class="button" onclick="location.href='menu.html'"><a style="font-family: myFont">Order</a></button>
+                <button class="button" onclick="location.href='rate.html'"><a style="font-family: myFont">Rate Us</a></button>
             </div>
         </div>
-    </body>
+    </div>
+    
+      <div class="main">
+        <div class="page-contents">
+            <h1 class="column-header-style">Our Specials</h1>
+            <div>
+                <p>Monday - Buy one get one large pizza</p>
+                <p>Tuesday - $2 off order</p>
+                <p>Wednesday - 50% off delivery fee</p>
+                <p>Thursday - Free breadsticks with order</p>
+                <p>Friday - Two free beverages per pizza</p>
+            </div>         
+            <h1 class="column-header-style">Our Locations</h1>         
+            <div class="location-container">
+                <img class ="location-pics" src="./assets/scsu.png">
+                <img class ="location-pics" src="./assets/scsup.png">
+            </div>
+        </div>
+      </div>
+    
+      <div class="right">
+        
+            <div class="column-contents">
+                <img class="pizza-pics" src="./assets/pizza1.jpg">
+                <img class ="pizza-pics" src="./assets/pizza2.jpg">
+                <img class ="pizza-pics" src="./assets/pizza3.jpg">               
+            </div>
+        
+    
+</div>
+</div>
+    <div style="display:block; background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright © copyright Eric Barthel, Blake Norman &  Rylan Loukusa</div>
+
+
+</body>
 </html>
+

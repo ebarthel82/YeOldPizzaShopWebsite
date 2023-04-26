@@ -9,10 +9,39 @@
                 margin: 0;
                 font-family: myFont;
             }
+
+            @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .mainbody{
+            flex-direction: column;
+        }
+        .left, .main, .right {
+        width: 100%;
+         }
+
+         .button{
+            width: auto;
+            height: auto;
+            padding: 0%;
+            margin: 5%;
+         }
+
+         .pizza-pics{
+            width: auto;
+            padding-top: 20px;
+         }
+
+
+
+        }
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="top">
+                        <img class="logo" alt="Ye Old Pizza Shop" src="./assets/wooden-sign-with-shaped-shield.jpg.png" >
+                        <h1 class="header">Place your order</h1>
+                    </div>
+        <div class="mainbody">
             <div class="left">
                 <div class="column-font">
                     <div class="column-contents">
@@ -23,10 +52,7 @@
                 </div>
             </div>
                 <div class="main">
-                    <div class="top">
-                        <img class="logo" alt="Ye Old Pizza Shop" src="./assets/wooden-sign-with-shaped-shield.jpg.png" >
-                        <h1 class="header">Place your order</h1>
-                    </div>
+                    
                     <div class="page-contents">
                         
                         <form class="form-layout" method="POST" action="submit-order.php">
@@ -58,19 +84,20 @@
                                 <input type="radio" name="question2" value="Sausage" style="margin-bottom: 15px;">
                                 <img class="form-img" src="./assets/sausage.jpg">
                             </label>
-                            <input class="place-order" type="submit" value="Place Order">
+                            <input class="place-order" type="submit" value="Place Order" style="margin-bottom: 20px;">
                         </form>
                     </div>
                 </div>
             <div class="right">
                 <div class="column-font">
                     <div class="column-contents">
-                        <img class ="location-pics" src="./assets/pizza1.jpg">
-                        <img class ="location-pics" src="./assets/pizza2.jpg">
-                        <img class ="location-pics" src="./assets/pizza3.jpg">               
+                        <img class ="pizza-pics" src="./assets/pizza1.jpg">
+                        <img class ="pizza-pics" src="./assets/pizza2.jpg">
+                        <img class ="pizza-pics" src="./assets/pizza3.jpg">               
                     </div>
                 </div>
             </div>
         </div>
+        <div style="display:block; background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright © copyright Eric Barthel, Blake Norman &  Rylan Loukusa</div>
     </body>
 </html>
